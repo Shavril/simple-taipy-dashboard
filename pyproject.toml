@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "simple-taipy-dashboard"
+version = "0.1.0"
+description = "Simple data science dashboard using Taipy."
+authors = ["Michaela Honková <honkova84@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_taipy_dashboard"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+taipy = ">=4.0.0"
+plotly = "5.24.1"
+tensorflow = "2.18.0"
+scikit-learn = "1.5.2"
+tensorflow-io-gcs-filesystem = "0.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
