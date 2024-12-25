@@ -13,6 +13,8 @@ plotly = "5.24.1"
 tensorflow = "2.18.0"
 scikit-learn = "1.5.2"
 tensorflow-io-gcs-filesystem = "0.31.0"
+tensorflow-intel = "^2.18.0"
+tf-keras = "^2.18.0"
 
 
 [build-system]
