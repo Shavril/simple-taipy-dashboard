@@ -105,9 +105,9 @@ with tgb.Page() as page:
                 tgb.image("images/icons/knn.png", width="3vw")
                 tgb.text("{knn_pred}", mode="md")
 
-                # TODO recurrent neural network
-                # tgb.image("images/icons/rnn.png", width="3vw")
-                # tgb.text("{rnn_pred}", mode="md")
+                # recurrent neural network
+                tgb.image("images/icons/rnn.png", width="3vw")
+                tgb.text("{rnn_pred}", mode="md")
 
 ###############
 #  Functions  #
@@ -383,8 +383,10 @@ def on_init(
     state.scenario.country.write(state.country)
     state.scenario.dates.write(state.dates)
     state.scenario.company.write(state.company)
+
     # process
     state.scenario.submit(wait=True)
+
     # output
     state.graph_data = state.scenario.graph_data.read()
     state.company_names = state.scenario.company_names.read()
@@ -453,7 +455,6 @@ if __name__ == "__main__":
     # create machine learning models
     lin_model = LinearRegression()
     knn_model = KNeighborsRegressor()
-    # TODO: rnn model is not properly scaled
     rnn_model = build_RNN(6)  # 6 features (columns) in model
 
     # run Taipy orchestrator to manage scenario
