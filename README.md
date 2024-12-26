@@ -22,8 +22,8 @@ It will dynamically filter data, display graphs, and handle user inputs—all fr
     ```
 
 3. This project uses `Poetry` for package management.  
-   Complete package versions are specified in `pyproject.toml` file.
-   WHen you have poetry installed, go to the directory with .toml file,
+   Complete package versions are specified in `pyproject.toml` file.  
+   When you have poetry installed, go to the directory with .toml file,  
    and run `poetry install`.
 
 4. Run `poetry run python main.py`. 
